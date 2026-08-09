@@ -20,13 +20,14 @@
 </header>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: 8 August 2026</p>
+<p class="updated">Last updated: 9 August 2026</p>
 
 <div class="card">
-  <p><strong>The short version.</strong> Condbend works entirely offline. It has
-  no accounts, no sign-in, no ads, and no analytics or tracking of any kind. Your
-  measurements and settings never leave your phone. The only information that
-  leaves your device is what is needed to process and restore a purchase.</p>
+  <p><strong>The short version.</strong> Condbend does its work entirely on your
+  phone. It has no accounts, no sign-in, no ads, and no advertising or behavioural
+  tracking. Your measurements and settings never leave your device. Two things do
+  leave it: what is needed to process and restore a purchase, and an automatic
+  report if the app crashes.</p>
 </div>
 
 <h2>Who we are</h2>
@@ -68,12 +69,32 @@ privacy policy</a>, and the
 <a href="https://policies.google.com/privacy" rel="noopener">Google privacy
 policy</a> for how each of them handles data.</p>
 
+<h2>Crash reports</h2>
+<p>When the app crashes, a diagnostic report is sent automatically so the fault
+can be found and fixed. This is handled by Firebase Crashlytics, a Google
+service. A report contains:</p>
+<ul>
+  <li>The stack trace of the crash — which lines of our code failed.</li>
+  <li>Device model, operating system version, and app version.</li>
+  <li>The state of the device at the time, such as available memory and whether
+      the app was in the foreground.</li>
+  <li>A Firebase installation identifier: a random, resettable ID for the app on
+      your device. It is not your name, email, or an advertising ID, and
+      reinstalling the app produces a new one.</li>
+</ul>
+<p>Crash reports are used only to fix defects. We do not enable Google Analytics,
+so no behavioural or usage events are collected alongside them. See the
+<a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase
+privacy documentation</a> for how Google processes this data.</p>
+<p>Because the calculators run offline and hold no personal data, a crash report
+cannot contain your measurements or job details.</p>
+
 <h2>What we do not do</h2>
 <ul>
   <li>We do not collect your name, email address, phone number, or location.</li>
-  <li>We do not use analytics, crash reporting, advertising, or tracking SDKs.</li>
-  <li>We do not sell or share personal information, and we do not use it for
-      advertising or cross-app tracking.</li>
+  <li>We do not use advertising, behavioural analytics, or cross-app tracking
+      SDKs, and there are no ads in the app.</li>
+  <li>We do not sell or share personal information.</li>
 </ul>
 
 <h2>Children</h2>
@@ -83,7 +104,8 @@ children. We do not knowingly collect information from children under 13.</p>
 <h2>Your choices and rights</h2>
 <p>Because we hold no information that identifies you, there is normally nothing
 personal for us to look up, correct, or delete. Uninstalling the app removes
-everything stored on your device.</p>
+everything stored on your device, and the installation identifier attached to any
+crash report is discarded with it.</p>
 <p>If you want the anonymous purchase record associated with your installation
 deleted, email us from any address and include the <strong>Support ID</strong>
 shown in the app under Settings. Note that deleting it also removes the record of
