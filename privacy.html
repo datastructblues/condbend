@@ -20,14 +20,16 @@
 </header>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: 9 August 2026</p>
+<p class="updated">Last updated: 2 November 2026</p>
 
 <div class="card">
   <p><strong>The short version.</strong> Condbend does its work entirely on your
-  phone. It has no accounts, no sign-in, no ads, and no advertising or behavioural
-  tracking. Your measurements and settings never leave your device. Two things do
-  leave it: what is needed to process and restore a purchase, and an automatic
-  report if the app crashes.</p>
+  phone. The free calculators need no account. Pro is tied to an account you
+  create with Sign in with Apple or Sign in with Google, so it follows you to a
+  new phone. There are no ads and no advertising or behavioural tracking. Your
+  measurements and settings never leave your device. Three things do leave it:
+  your sign-in account details if you sign in, what is needed to process and
+  restore a purchase, and an automatic report if the app crashes.</p>
 </div>
 
 <h2>Who we are</h2>
@@ -46,6 +48,25 @@ is removed when you uninstall the app:</p>
   <li>A flag recording whether Pro is unlocked.</li>
 </ul>
 
+<h2>Your account</h2>
+<p>Signing in is optional for the free calculators and required to buy or
+restore Pro. You sign in with Apple or Google; Condbend has no passwords of its
+own. Accounts are managed for us by Firebase Authentication, a Google service,
+which receives:</p>
+<ul>
+  <li>A unique account identifier issued by Firebase.</li>
+  <li>The identifier Apple or Google uses for you with Condbend.</li>
+  <li>Your email address and, if you share it, your name. With Sign in with
+      Apple you can choose <em>Hide My Email</em>, in which case we only receive
+      an Apple relay address.</li>
+  <li>When the account was created and last signed in.</li>
+</ul>
+<p>We use these only to keep you signed in, to attach your purchase to your
+account, and to answer you if you contact support. We never see your Apple or
+Google password. See the
+<a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase
+privacy documentation</a>.</p>
+
 <h2>Information related to purchases</h2>
 <p>If you buy a subscription or the lifetime unlock, purchase processing is
 handled by Apple or Google, and subscription state is managed for us by
@@ -54,9 +75,9 @@ Apple/Google account details.</p>
 <p>To make purchases work across sessions and support restoring them, RevenueCat
 receives:</p>
 <ul>
-  <li>A randomly generated, anonymous identifier for your installation. It is not
-      derived from your name, email, phone number, or any advertising ID, and we
-      cannot use it to identify you personally.</li>
+  <li>Your account identifier (the Firebase one above), so the purchase belongs
+      to your account rather than to a single phone. RevenueCat does not receive
+      your email address or name.</li>
   <li>The purchase receipt issued by the App Store or Google Play, and the status
       of your subscription.</li>
   <li>Basic technical context such as device platform, app version, and store
@@ -91,7 +112,8 @@ cannot contain your measurements or job details.</p>
 
 <h2>What we do not do</h2>
 <ul>
-  <li>We do not collect your name, email address, phone number, or location.</li>
+  <li>We do not collect your phone number or location, and we only receive your
+      name and email address through the sign-in described above.</li>
   <li>We do not use advertising, behavioural analytics, or cross-app tracking
       SDKs, and there are no ads in the app.</li>
   <li>We do not sell or share personal information.</li>
@@ -102,14 +124,16 @@ cannot contain your measurements or job details.</p>
 children. We do not knowingly collect information from children under 13.</p>
 
 <h2>Your choices and rights</h2>
-<p>Because we hold no information that identifies you, there is normally nothing
-personal for us to look up, correct, or delete. Uninstalling the app removes
-everything stored on your device, and the installation identifier attached to any
-crash report is discarded with it.</p>
-<p>If you want the anonymous purchase record associated with your installation
-deleted, email us from any address and include the <strong>Support ID</strong>
-shown in the app under Settings. Note that deleting it also removes the record of
-your purchase, so Pro would no longer restore on that device.</p>
+<p><strong>Delete your account in the app:</strong> Settings → Account →
+<em>Delete account</em>. This permanently deletes your Condbend account and, for
+Sign in with Apple, revokes Condbend's access to your Apple ID. Pro saved to that
+account is lost. Deleting the account does not cancel a subscription — cancel it
+in your App Store or Google Play settings.</p>
+<p>To have your purchase record at RevenueCat deleted as well, or for any other
+request to access or correct your data, email us and include the
+<strong>Support ID</strong> shown under Settings → Account.</p>
+<p>Uninstalling the app removes everything stored on your device, and the
+installation identifier attached to any crash report is discarded with it.</p>
 
 <h2>Changes to this policy</h2>
 <p>If this policy changes, the revised version will be posted on this page with a
